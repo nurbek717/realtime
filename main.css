@@ -1,0 +1,151 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #595656;
+   margin: 0;
+   padding: 0;
+}
+
+.chat-container {
+   margin: 0 auto;
+   margin-top: 20px;
+   width: 100%;
+   max-width: 400px;
+   height: 80vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+   flex: 1;
+   padding: 10px;
+   margin: 0;
+   overflow-y: auto;
+   list-style-type: none;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.message-item {
+   background-color: #007bff;
+   color: white;
+   padding: 8px;
+   margin: 5px 0;
+   border-radius: 12px;
+   max-width: 80%;
+   word-wrap: break-word;
+}
+
+.input_div {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+   background-color: rgb(60, 60, 60);
+   border-top: 1px solid #555;
+}
+
+.input1, .input2 {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #100f0f;
+   border-radius: 4px;
+   margin-right: 5px;
+   margin-left: 5px;
+   background-color: #fff;
+   outline: none;
+}
+
+.input2 {
+   width: 30%;
+}
+
+button {
+   padding: 10px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #0056b3;
+}
+
+
+
+#messages {
+   list-style-type: none;
+   padding: 0;
+   margin: 10px;
+}
+
+li {
+   margin: 5px 0;
+   padding: 8px 12px;
+   border-radius: 12px;
+   max-width: 70%;
+   word-wrap: break-word;
+}
+
+.my-message {
+   background-color: #4b94e3;
+   color: white;
+   margin-left: auto;
+   text-align: right;
+}
+
+.other-message {
+   background-color: #57cc6a;
+   color: white;
+   margin-right: auto;
+   text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+   .chat-container {
+       width: 100%;
+       max-width:70%;
+       height: 75vh;
+   }
+
+   .input1, .input2 {
+       padding: 8px;
+       font-size: 14px;
+   }
+
+   button {
+       padding: 8px;
+       font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 430px) {
+   .chat-container {
+      width: 100%;
+      max-width:60%;
+      height: 75vh;
+   }
+   .input_div{
+      padding: 5px;
+   }
+
+   .input1, .input2 {
+       font-size: 10px;
+       padding: 6px;
+       margin-right: 0px;
+       margin-left: 0px;
+   }
+
+   button {
+      margin-left: 3px;
+       padding: 6px;
+       font-size: 10px;
+   }
+}
+
+
+

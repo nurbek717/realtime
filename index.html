@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- <ul id="messages"></ul> -->
+        <ul class="messages" id="messages"></ul>
+        <div class="input_div">
+            <input class="input2" id="niknameInput" autocomplete="off" placeholder="Nickname yozing..." />
+            <input class="input1" id="messagesInput" autocomplete="off" placeholder="Xabar yozing..." />
+            <button id="sendButton">Yuborish</button>
+        </div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
